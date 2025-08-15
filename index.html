@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/title.ico" type="image/x-icon">
+  <title>Oliver MQ | CyberSec & SoftwareDev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');</style>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+  <div class="min-h-screen">
+    <nav class="px-6 py-4 shadow-sm dark:shadow-gray-800/50">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">oliverMQ</a>
+        <div class="flex items-center space-x-6">
+          <a href="#about" class="hover:text-blue-600 dark:hover:text-cyan-400">Sobre mí</a>
+          <a href="#skills" class="hover:text-blue-600 dark:hover:text-cyan-400">Habilidades</a>
+          <a href="#projects" class="hover:text-blue-600 dark:hover:text-cyan-400">Proyectos</a>
+          <a href="#contact" class="hover:text-blue-600 dark:hover:text-cyan-400">Contacto</a>
+          <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+            <i class="fas fa-moon dark:hidden"></i>
+            <i class="fas fa-sun hidden dark:inline"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="py-20 px-6 hero">
+      <div class="max-w 6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="md:w-1/2">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Oliver Mitma Quino</h1>
+          <h2 class="text-2xl md:text-3xl mb-6 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Especialista en Ciberseguridad & Desarrollador de Software</h2>
+          <p class="text-lg mb-8">Desarrollo soluciones seguras y escalables con un enfoque en la protección de datos y sistemas.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white rounded-lg font-medium transition-colors">Contacto</a>
+            <a href="#projects" class="px-6 py-3 border border-blue-600 dark:border-cyan-500 text-blue-600 dark:text-cyan-500 hover:bg-blue-50 dark:hover:bg-gray-800 rounded-lg font-medium transition-colors">Ver proyectos</a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl">
+            <!-- <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3ad39dc8-2d17-43eb-acb2-fabdc7b65759.png" alt="Oliver Mitma Quino - profesional de ciberseguridad con camisa formal mirando a la cámara con fondo de oficina moderna" class="w-full h-full object-cover"> -->
+            <img src="img/photo_cuad.png" alt="Oliver Mitma" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Acerca de mí</h2>
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-md">
+          <p class="mb-4">Soy un profesional apasionado por la ciberseguridad y el desarrollo de software, con experiencia en la creación de soluciones tecnológicas seguras y eficientes.</p>
+          <p class="mb-4">Mi enfoque combina conocimientos técnicos profundos con una comprensión estratégica de los riesgos de seguridad, permitiéndome desarrollar aplicaciones que no solo son funcionales sino también resistentes a amenazas.</p>
+          <p>Estoy constantemente actualizando mis conocimientos para estar al día con las últimas tendencias en seguridad informática y tecnologías de desarrollo.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Mis Habilidades</h2>
+        
+        <div class="mb-12">
+          <h3 class="text-xl font-semibold mb-6 text-blue-600 dark:text-cyan-500">Ciberseguridad</h3>
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Análisis de Vulnerabilidades</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-level bg-gray-200 dark:bg-gray-700 w-full" style="--level:90%">
+                <div class="h-full bg-blue-600 dark:bg-cyan-500 rounded" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Seguridad de Redes</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-level bg-gray-200 dark:bg-gray-700 w-full">
+                <div class="h-full bg-blue-600 dark:bg-cyan-500 rounded" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Infraestructura</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-level bg-gray-200 dark:bg-gray-700 w-full">
+                <div class="h-full bg-blue-600 dark:bg-cyan-500 rounded" style="width: 88%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span>Sistemas Operativos</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-level bg-gray-200 dark:bg-gray-700 w-full">
+                <div class="h-full bg-blue-600 dark:bg-cyan-500 rounded" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-6 text-blue-600 dark:text-cyan-500">Desarrollo de Software</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+              <h4 class="font-medium mb-3">Lenguajes</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">Java</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">JavaScript</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">C#</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">C++</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">Python</span>
+              </div>
+            </div>
+            <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+              <h4 class="font-medium mb-3">Frameworks</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">Spring</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">ASP.NET Core</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">Flutter</span>
+              </div>
+            </div>
+            <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+              <h4 class="font-medium mb-3">Bases de Datos</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">MySQL</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">Supabase</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">PostgreSQL</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">MongoDB</span>
+              </div>
+            </div>
+            <div class="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+              <h4 class="font-medium mb-3">Tools</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">Git</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">GitHub</span>
+                <span class="px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-cyan-400 rounded-full text-sm">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-16 px-6 bg-gray-50 dark:bg-gray-800">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Ultimos Proyectos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg">
+            <div class="h-48 overflow-hidden">
+              <img src="https://furkanbilgin.com/assets/img/posts/appservice/app-service.png" alt="Dashboard de seguridad mostrando análisis de amenazas en tiempo real con gráficos y alertas" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Sistema Web de Inventario en Azure</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Desplegada para demostrar integración entre aplicaciones web y servicios en la nube de Microsoft.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">C#</span>
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">ASP.NET MVC</span>
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">Azure SQL</span>
+              </div>
+              <a href="https://atomstore-etc0f7b9dzeuafg6.canadacentral-01.azurewebsites.net/" target="_blank" class="text-blue-600 dark:text-cyan-400 hover:underline font-medium">Ver detalles →</a>
+            </div>
+          </div>
+
+          <div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lg">
+            <div class="h-48 overflow-hidden">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2253364d-2013-40e3-95c0-8ac9ae1a2d83.png" alt="Interfaz de aplicación de ciberseguridad con análisis de vulnerabilidades y recomendaciones" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Herramienta de Escaneo de Puertos</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Script automatizado para escanear y identificar puertos abiertos.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">Python</span>
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">nmap</span>
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">TCP/UDP</span>
+              </div>
+              <a href="https://github.com/olivermqDev/portscanner" target="_blank" class="text-blue-600 dark:text-cyan-400 hover:underline font-medium">Ver detalles →</a>
+            </div>
+          </div>
+
+          <div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-lgS">
+            <div class="h-48 overflow-hidden">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2882a7a0-41e8-460f-a273-4458cdc7e284.png" alt="Aplicación web con panel de control y gráficos de análisis de datos de seguridad" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Plataforma de Análisis Forenses</h3>
+              <p class="text-gray-600 dark:text-gray-300 mb-4">Herramienta para investigaciones digitales y recuperación de evidencias.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">Java</span>
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">Spring Boot</span>
+                <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-gray-600 text-blue-800 dark:text-cyan-400 rounded">MongoDB</span>
+              </div>
+              <a href="#" class="text-blue-600 dark:text-cyan-400 hover:underline font-medium">Ver detalles →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 text-center">Contacto</h2>
+
+            <div class="flex flex-col sm:flex-row justify-between gap-4 mx-20 my-8">
+              <div class="flex items-center">
+                <a href="https://wa.me/51934182375" target="_blank">
+                  <i class="fab fa-whatsapp text-blue-600 dark:text-cyan-500 mr-3 text-6xl"></i>
+                </a>
+              </div>
+              <div class="flex items-center">
+                <a href="https://github.com/olivermqDev" target="_blank">
+                  <i class="fab fa-github text-blue-600 dark:text-cyan-500 mr-3 text-6xl"></i>
+
+                </a>
+              </div>
+              <div class="flex items-center">
+                <a href="https://www.linkedin.com/in/olivermq/" target="_blank">
+                  <i class="fab fa-linkedin text-blue-600 dark:text-cyan-500 mr-3 text-6xl"></i>
+
+                </a>
+              </div>
+              <div class="flex items-center">
+                <a href="https://www.instagram.com/bd.atom/" target="_blank">
+                  <i class="fab fa-instagram text-blue-600 dark:text-cyan-500 mr-3 text-6xl"></i>
+
+                </a>
+              </div>
+
+            </div>
+              
+
+        <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-md">
+          <form id="contact-form" action="https://formspree.io/f/xldlodzj" method="POST">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-2">Nombre</label>
+                <input type="text" name="name" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700" required>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                <input type="email" name="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700" required>
+              </div>
+            </div>
+            
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-medium mb-2">Mensaje</label>
+              <textarea name="message" id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700" required></textarea>
+            </div>
+            <button type="submit" class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white rounded-lg font-medium transition-colors">Enviar mensaje</button>
+          </form>
+          
+          <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-600">
+            <h3 class="text-xl font-semibold mb-4">Otras formas de contacto</h3>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+              <div class="flex items-center mx-20 my-4">
+                <i class="fas fa-envelope text-blue-600 dark:text-cyan-500 mr-3 text-2xl"></i>
+                <span>olivermq.dev@proton.me</span>
+              </div>
+              <div class="flex items-center mx-20 my-4">
+                <i class="fas fa-phone text-blue-600 dark:text-cyan-500 mr-3 text-2xl"></i>
+                <span>+51 934182375</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    
+    
+    <footer class="py-8 px-6 bg-gray-100 dark:bg-gray-800">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p class="text-gray-600 dark:text-gray-300">© 2025 Oliver Mitma Quino.Todos los derechos reservados.</p>
+          </div>
+          <div class="flex space-x-6">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="js/scripts.js" defer></script>
+</body>
+</html>
+

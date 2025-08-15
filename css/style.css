@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+.hero {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 2rem;
+}    
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-level {
+  height: 8px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.skill-level::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 4px;
+  background-color: currentColor;
+}
+
+.dark .skill-level::after {
+  background-color: #6a22f0;
+}
+
+.project-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+nav {
+      position: fixed;     
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+      padding: 15px;
+    }
+main {
+      margin-top: 70px;
+      padding: 20px;
+    }
